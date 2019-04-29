@@ -1,0 +1,37 @@
+{
+  "name": "johannessteu/dependabot-demo",
+  "description": "some description",
+  "config": {
+    "vendor-dir": "Packages/Libraries",
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php" : "~7.2.0",
+    "neos/flow": "~5.2.3",
+
+    "johannessteu/demo-package": "@dev"
+  },
+  "repositories": {
+    "distributionPackages": {
+      "type": "path",
+      "url": "./myPackages/*"
+    }
+  },
+  "require-dev": {
+    "neos/buildessentials": "~5.2.0",
+    "phpunit/phpunit": "~7.5.6",
+    "mikey179/vfsstream": "~1.6",
+    "t3n/coding-standard": "~1.0.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "suggest": {
+    "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
+  },
+  "scripts": {
+    "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+    "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+    "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+    "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+  }
+}
