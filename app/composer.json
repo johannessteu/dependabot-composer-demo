@@ -11,12 +11,12 @@
 
     "johannessteu/demo-package": "@dev"
   },
-  "repositories": [
-    {
+  "repositories": {
+    "distributionPackages": {
       "type": "path",
       "url": "./myPackages/*"
     }
-  ],
+  },
   "require-dev": {
     "neos/buildessentials": "~5.2.0",
     "phpunit/phpunit": "~7.5.6",
