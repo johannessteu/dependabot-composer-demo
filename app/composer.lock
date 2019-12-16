@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b88e7ff8ac423092fdda75ec61199819",
+    "content-hash": "c399f871a1f2a27b6fe836c5466b0f4d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -706,8 +706,7 @@
             "dist": {
                 "type": "path",
                 "url": "./myPackages/Demo.Package",
-                "reference": "724c40ebf1b517f9cefe3338c6608d741d79e20d",
-                "shasum": null
+                "reference": "724c40ebf1b517f9cefe3338c6608d741d79e20d"
             },
             "require": {
                 "neos/flow": "*"
@@ -2402,7 +2401,7 @@
             "time": "2018-10-26T13:21:45+00:00"
         },
         {
-            "name": "mikey179/vfsStream",
+            "name": "mikey179/vfsstream",
             "version": "v1.6.6",
             "source": {
                 "type": "git",
@@ -2497,16 +2496,16 @@
         },
         {
             "name": "neos/buildessentials",
-            "version": "5.2.0",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/BuildEssentials.git",
-                "reference": "b54950e194fad1badcb02d4708012780e786ec31"
+                "reference": "a7ee07376d6243acf2813e4ce0ea2d35ff7cfa84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/BuildEssentials/zipball/b54950e194fad1badcb02d4708012780e786ec31",
-                "reference": "b54950e194fad1badcb02d4708012780e786ec31",
+                "url": "https://api.github.com/repos/neos/BuildEssentials/zipball/a7ee07376d6243acf2813e4ce0ea2d35ff7cfa84",
+                "reference": "a7ee07376d6243acf2813e4ce0ea2d35ff7cfa84",
                 "shasum": ""
             },
             "require": {
@@ -2524,7 +2523,7 @@
                 "LGPL-3.0+"
             ],
             "description": "Neos Flow Build Toolchain Essentials",
-            "time": "2018-04-17T22:37:52+00:00"
+            "time": "2018-12-12T15:44:57+00:00"
         },
         {
             "name": "phar-io/manifest",
