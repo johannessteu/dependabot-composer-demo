@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b88e7ff8ac423092fdda75ec61199819",
+    "content-hash": "6a2f2c2bc75cb9777d51784b2e8457a8",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -706,8 +706,7 @@
             "dist": {
                 "type": "path",
                 "url": "./myPackages/Demo.Package",
-                "reference": "724c40ebf1b517f9cefe3338c6608d741d79e20d",
-                "shasum": null
+                "reference": "d3733592777d3116406b9a905c3e1ed21f9e324a"
             },
             "require": {
                 "neos/flow": "*"
@@ -723,7 +722,10 @@
                     "Demo\\Package\\": "Classes/"
                 }
             },
-            "description": "t3n contentapi Elastic package"
+            "description": "t3n contentapi Elastic package",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "neos/cache",
@@ -781,20 +783,24 @@
         },
         {
             "name": "neos/composer-plugin",
-            "version": "2.0.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/composer-plugin.git",
-                "reference": "cd20e3c9b548127f4fa1e0f31662072bf82250d4"
+                "reference": "0cd9a93955853733f04b6de037ced56d41d40f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/composer-plugin/zipball/cd20e3c9b548127f4fa1e0f31662072bf82250d4",
-                "reference": "cd20e3c9b548127f4fa1e0f31662072bf82250d4",
+                "url": "https://api.github.com/repos/neos/composer-plugin/zipball/0cd9a93955853733f04b6de037ced56d41d40f75",
+                "reference": "0cd9a93955853733f04b6de037ced56d41d40f75",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0.0"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "composer/installers": "*"
             },
             "type": "composer-plugin",
             "extra": {
@@ -810,7 +816,7 @@
                 "MIT"
             ],
             "description": "Flow Composer Plugin",
-            "time": "2016-05-05T07:03:52+00:00"
+            "time": "2020-11-27T08:16:46+00:00"
         },
         {
             "name": "neos/eel",
@@ -1861,17 +1867,17 @@
             ],
             "authors": [
                 {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                },
+                {
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
                 {
                     "name": "Thibaud Fabre",
                     "email": "thibaud@aztech.io"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
                 }
             ],
             "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
@@ -2277,6 +2283,7 @@
                 "code",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2018-08-13T20:36:59+00:00"
         },
         {
@@ -2331,6 +2338,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
@@ -2402,7 +2410,7 @@
             "time": "2018-10-26T13:21:45+00:00"
         },
         {
-            "name": "mikey179/vfsStream",
+            "name": "mikey179/vfsstream",
             "version": "v1.6.6",
             "source": {
                 "type": "git",
@@ -2497,20 +2505,20 @@
         },
         {
             "name": "neos/buildessentials",
-            "version": "5.2.0",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/BuildEssentials.git",
-                "reference": "b54950e194fad1badcb02d4708012780e786ec31"
+                "reference": "c130bdeef405b7666b09895f8304852ffacb7785"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/BuildEssentials/zipball/b54950e194fad1badcb02d4708012780e786ec31",
-                "reference": "b54950e194fad1badcb02d4708012780e786ec31",
+                "url": "https://api.github.com/repos/neos/BuildEssentials/zipball/c130bdeef405b7666b09895f8304852ffacb7785",
+                "reference": "c130bdeef405b7666b09895f8304852ffacb7785",
                 "shasum": ""
             },
             "require": {
-                "neos/composer-plugin": "^1.0.6|^2.0.0"
+                "neos/composer-plugin": "^2.0.0"
             },
             "replace": {
                 "typo3/buildessentials": "self.version"
@@ -2524,7 +2532,13 @@
                 "LGPL-3.0+"
             ],
             "description": "Neos Flow Build Toolchain Essentials",
-            "time": "2018-04-17T22:37:52+00:00"
+            "funding": [
+                {
+                    "url": "https://neosfunding.sandstorm.de/en",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-12-04T11:53:38+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -3093,6 +3107,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2018-10-30T05:52:18+00:00"
         },
         {
@@ -3976,5 +3991,6 @@
     "platform": {
         "php": "~7.2.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
